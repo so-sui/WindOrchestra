@@ -1,0 +1,13 @@
+about/部活動紹介
+achievements/活動実績
+copyright/著作権
+disclaimer/免責事項
+events/演奏活動のお知らせ
+greetings/顧問・幹部挨拶
+lecturer/顧問・講師紹介
+part/パート紹介
+privacy/プライバシーポリシー
+Q&A/よくある質問
+recruiting/部員募集
+sns_link/snsリンク
+Topics Archive/トピックスアーカイブ

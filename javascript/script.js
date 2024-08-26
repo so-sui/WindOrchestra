@@ -21,17 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', adjustMenu);
     adjustMenu(); // 初回ロード時に実行
 
-    // 更新履歴セクションの表示切替
-    const toggleIcon = document.getElementById('toggle-icon');
-    if (toggleIcon) {
-        toggleIcon.addEventListener('click', function() {
-            var updatesContent = document.getElementById('updates-content');
-            this.classList.toggle('active');
-            updatesContent.style.display = updatesContent.style.display === 'block' ? 'none' : 'block';
-        });
-    } else {
-        console.error('Toggle icon not found');
-    }
 
     // ハンバーガーボタンをクリックしたときの処理
     const hamburgerButton = document.getElementById('hamburger-button');
@@ -81,17 +70,21 @@ document.querySelectorAll('.collapsible-section').forEach(section => {
 
 // トピックスを追加
 const topics = [
+    // ここにトピックスを追加...ひな形→{ date: '0000年0月00日', content: '<a href="ここにリンク" class="hover-link">ここに内容</a>', published: '0000-00-00' },
+    
     { date: '2024年8月20日', content: 'ホームページの基本レイアウト完成？', published: '2024-08-20' },
     { date: '2024年8月17日', content: '<a href="posts/2481417合宿.html" class="hover-link">夏季合宿を行いました。</a>', published: '2024-08-17' },
     { date: '2024年8月12日', content: '現役生によるホームページ製作開始！', published: '2024-08-12' },
     { date: '2024年7月25日', content: '<a href="https://www.instagram.com/p/C92Kvvoz0BS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="hover-link">横浜市大会の結果が出ました！</a>', published: '2024-07-25' },
     { date: '2024年3月19日', content: '第20回定期演奏会開催！', published: '2024-03-19' },
-    // 必要に応じてここにトピックスを追加...
 ];
 
 const topicsList = document.getElementById('topics1-list');
 
-// トピックスの表示を10個に制限
+
+
+
+
 topics.slice(0, 10).forEach(topic => {
     const listItem = document.createElement('li');
     const publishDate = new Date(topic.published);
