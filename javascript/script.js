@@ -73,11 +73,6 @@ document.querySelectorAll('.collapsible-section').forEach(section => {
 const visitToggleButton = document.getElementById('toggle-visit');
 const visitContent = document.getElementById('visit-content');
 
-visitToggleButton.addEventListener('click', () => {
-    const isHidden = visitContent.style.display === 'none';
-    visitContent.style.display = isHidden ? 'block' : 'none';
-    visitToggleButton.textContent = isHidden ? '部活動見学希望お申込みフォームを閉じる' : '部活動見学希望お申込みフォームを開く';
-});
 
 
 

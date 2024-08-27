@@ -464,6 +464,16 @@ section p {
     background-color: #fff;
 }
 
+.section-content img {
+    max-width: 100%; /* 画像の幅を親要素の幅に合わせる */
+    height: auto; /* 高さを自動調整 */
+    display: block; /* 画像の余白を取り除く */
+    margin: 0 auto; /* 画像を中央に配置 */
+}
+
+
+
+
 /*ホバーしたときのみ下線を表示*/
 .hover-link {
     text-decoration: none; /* 下線を消す */
@@ -655,6 +665,23 @@ section p {
     background-color: #f9f9f9;
 }
 
+
+/*トピックスのSNSアイコン
+.topics i {
+    margin-right: 8px;
+    font-size: 1.2em;
+    color: #000;
+}
+
+.topics i.fa-x {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.topics i.fa-solid fa-file {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
 
 
 
