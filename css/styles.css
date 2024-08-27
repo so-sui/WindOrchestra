@@ -167,6 +167,7 @@ footer {
     z-index: 1003;
     padding-top: 60px; /* ヘッダー分のスペースを確保 */
     overflow-y: auto; /* 縦方向にスクロールを有効にする */
+    padding-bottom: 20px; /* 一番下のQ&Aが見やすくなるよう余白を追加 */
 }
 
 .sidebar.active {
