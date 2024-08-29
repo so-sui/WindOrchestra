@@ -1,0 +1,10 @@
+Baseball support　野球応援
+Brass Band Competition　吹奏楽コンクール
+Ensemble Contest　アンサンブルコンテスト
+Hall practice　ホール練習
+Joint Concert　ジョイントコンサート
+Regular Concerts　定期演奏会
+School festival　夕照祭
+Summer training camp　夏季合宿
+
+
