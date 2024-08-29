@@ -87,7 +87,7 @@ nav ul li a:hover {
 main {
     flex: 1;
     width: 100%;
-    max-width: auto;
+    max-width: 1400px;
     padding: 1rem;
     box-sizing: border-box;
     text-align: left;
