@@ -87,12 +87,12 @@ nav ul li a:hover {
 main {
     flex: 1;
     width: 100%;
-    max-width: 1200px;
+    max-width: auto;
     padding: 1rem;
     box-sizing: border-box;
     text-align: left;
     margin: 0 auto;
-    margin-top: 100px; /* ヘッダーの高さ分だけスペースを確保 */
+    margin-top: 75px; /* ヘッダーの高さ分だけスペースを確保 */
 }
 
 /* フッターのスタイル */
@@ -682,7 +682,6 @@ section p {
 
 
 
-/* フォントを変更し、文字の枠を追加 */
 .event-title {
     font-size: 2em; /* フォントサイズを変更 */
     color: #ffffff; /* 文字の色 */
