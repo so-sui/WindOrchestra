@@ -398,38 +398,6 @@ section p {
 
 
 
-
-.activities {
-    margin: 20px;
-}
-
-.year-section {
-    margin-bottom: 30px;
-}
-
-.month-section {
-    margin-bottom: 20px;
-}
-
-.event-date {
-    font-weight: bold;
-}
-
-.event-name {
-    font-size: 1.2em;
-    display: block;
-    margin-top: 5px;
-}
-
-.event-description {
-    margin-top: 5px;
-}
-
-
-
-
-
-
 .collapsible-section {
     border: 1px solid #ccc;
     margin-bottom: 10px;
@@ -682,6 +650,61 @@ section p {
     margin-right: 8px;
     font-size: 1.2em;
 }
+
+
+
+/* イベント写真コンテナ */
+.event-photo-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.event-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.6); /* グレーのオーバーレイ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* フォントを変更し、文字の枠を追加 */
+.event-title {
+    font-size: 2em; /* フォントサイズを変更 */
+    color: #ffffff; /* 文字の色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 文字に枠線を追加 */
+    text-align: center; /* 文字を中央揃え */
+    padding: 20px; /* 文字の周りの余白 */
+}
+
+
+/* その他のセクション */
+.separator {
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+.event-overview, .event-timing {
+    margin: 20px 0;
+}
+
+
+
+
 
 
 
