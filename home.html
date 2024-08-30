@@ -69,6 +69,21 @@
         
         <img src="images/about1.png" alt="部活の写真" class="no-right-click">
         
+        <BR><BR>
+        <div class="carousel">
+  <button class="prev" onclick="prevSlide()">◁</button>
+  <div class="carousel-images">
+    <a href="menu/events.html"><img src="images/homeeven.png" class="carousel-image"/></a>
+    <a href="menu/recruiting.html"><img src="images/homeinc.png" class="carousel-image"/></a>
+    <a href="https://www.instagram.com/so_gakukan_so_sui/"><img src="images/インスタ更新中.png" class="carousel-image"/></a>
+    <a href="link3.html"><img src="images/background.png" class="carousel-image"/></a>
+    <a href="link3.html"><img src="images/background.png" class="carousel-image"/></a>
+    <a href="link3.html"><img src="images/background.png" class="carousel-image"/></a>
+    <a href="link3.html"><img src="images/background.png" class="carousel-image"/></a>
+  </div>
+  <button class="next" onclick="nextSlide()">▷</button>
+</div>
+
         
         
         <p>お問い合わせ先<BR>横浜創学館高等学校吹奏楽部<BR>TEL 000-000-0000</p>
@@ -135,6 +150,50 @@ topics.slice(0, 10).forEach(topic => {
 
     topicsList.appendChild(listItem);
 });
+
+
+
+
+
+let currentSlide = 0;
+
+function updateSlidePosition() {
+  const carouselImages = document.querySelector('.carousel-images');
+  const totalSlides = document.querySelectorAll('.carousel-image').length;
+  const imageWidth = 410; // 画像の幅 + マージン（5px * 2）
+  const maxTranslateX = (totalSlides - 1) * imageWidth;
+
+  // 現在のスライド位置が最大位置を超えないように制限
+  if (currentSlide * imageWidth > maxTranslateX) {
+    currentSlide = totalSlides - 1;
+  }
+
+  // 現在のスライド位置が0より小さくならないように制限
+  if (currentSlide < -3) {
+    currentSlide = -3;
+  }
+
+  const offset = (carouselImages.parentElement.clientWidth / 2) - (imageWidth / 2);
+  carouselImages.style.transform = `translateX(${offset - currentSlide * imageWidth}px)`;
+}
+
+function nextSlide() {
+  const totalSlides = document.querySelectorAll('.carousel-image').length;
+  if (currentSlide < totalSlides - 4) { // 最後の画像を超えないように制限
+    currentSlide++;
+    updateSlidePosition();
+  }
+}
+
+function prevSlide() {
+  if (currentSlide > -3) { // 最初の画像より前に行かないように制限
+    currentSlide--;
+    updateSlidePosition();
+  }
+}
+
+// 初期位置を中央に配置するために呼び出す
+updateSlidePosition();
     </script>
 </body>
 </html>

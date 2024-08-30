@@ -749,6 +749,60 @@ section p {
 
 
 
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  width: 400px; /* 縦長の画像に合わせて調整 */
+  height: 500px; /* 縦長の画像に合わせて調整 */
+  margin: 0 5px;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-image:hover {
+  opacity: 0.7; /* ホバー時に強調 */
+}
+
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景 */
+  color: white; /* 白い文字 */
+  border: none;
+  font-size: 2.5rem; /* 少し大きく */
+  padding: 10px; /* 内側の余白を追加 */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 50%; /* ボタンを丸く */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* 影をつける */
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* ホバー時に色を濃く */
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
 
 
 /* スマホ用のスタイル */
