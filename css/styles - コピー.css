@@ -808,64 +808,23 @@ section p {
         display: none;
     }
     .event-grid {
-        display: grid;
-    	grid-template-columns: repeat(1, 1fr); /* 横に4つの列 */
-    	gap: 10px; /* アイテム間の間隔 */
-    	padding: 20px;
-    }
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 横に4つの列 */
+    gap: 10px; /* アイテム間の間隔 */
+    padding: 20px;
 
-    body {
-        font-size: 14px; /* 基本の文字サイズを小さくする */
+    .overlay-text {
+    font-size: 1rem;
     }
-
-    header .site-title {
-        font-size: 1.2rem; /* ヘッダーのタイトル文字サイズを調整 */
-    }
-
-    nav ul li a {
-        font-size: 0.9rem; /* ナビゲーションメニューの文字サイズを調整 */
-    }
-
-    main {
-        font-size: 14px; /* メインコンテンツの文字サイズを調整 */
-    }
-
-    footer {
-        font-size: 14px; /* フッターの文字サイズを調整 */
-    }
-
-    .events h2 {
-        font-size: 1.3rem; /* イベントタイトルの文字サイズを調整 */
-    }
-
-    .event-text {
-        font-size: 0.9rem; /* イベントの説明文字サイズを調整 */
-    }
-
-    .overview h3 {
-        font-size: 1.4rem; /* 吹奏楽部概要セクションの見出しサイズを調整 */
-    }
-
-    .overview p, .overview ul {
-        font-size: 14px; /* 吹奏楽部概要セクションの本文サイズを調整 */
-    }
-
-    .lecturer-card h3 {
-        font-size: 1.3rem; /* 顧問・講師紹介の見出しサイズを調整 */
-    }
-
-    .lecturer-card p {
-        font-size: 0.9rem; /* 顧問・講師紹介の本文サイズを調整 */
-    }
-
-    .year-toggle {
-        font-size: 0.9rem; /* 年度切り替えボタンの文字サイズを調整 */
-    }
-
-    .year-content h2, .year-content p {
-        font-size: 14px; /* 年度内容の文字サイズを調整 */
-    }
-
-    /* 他の要素の文字サイズも必要に応じて調整 */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
-
