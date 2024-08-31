@@ -727,7 +727,6 @@ section p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.3); /* 半透明の背景色を追加 */
 }
 
 .overlay-text {
@@ -737,6 +736,8 @@ section p {
     font-family: 'Arial', sans-serif; /* フォントスタイルを指定 */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* テキストに影を追加 */
 }
+
+
 
 
 
