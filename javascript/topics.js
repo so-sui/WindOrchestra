@@ -1,6 +1,7 @@
 // トピックスデータ
 const topicsArchive = {
     2024: [
+        { date: '2024年9月04日', content: '<i class="fab fa-instagram"></i><a href="https://www.instagram.com/p/C_fxwfcTFfv/?utm_source=ig_web_copy_link" class="hover-link">スタジオ録音してきました！</a>', published: '2024-09-04' },
         { date: '2024年8月20日', content: 'ホームページの基本レイアウト完成？', published: '2024-08-20' },
         { date: '2024年8月17日', content: '<a href="../posts/2481417合宿.html" class="hover-link">夏季合宿を行いました。</a>', published: '2024-08-17' },
         { date: '2024年8月12日', content: '現役生によるホームページ製作開始！', published: '2024-08-12' },
@@ -13,7 +14,7 @@ const topicsArchive = {
     
     
     
-    0000: [
+    2000: [
         { date: '0000年0月00日', content: '<a href="ここにリンク" class="hover-link">ここに内容</a>', published: '0000-00-00' },
     ],
     // 他の年度のデータもここに追加可能(上のをコピーして中身を置き換えればOK)
