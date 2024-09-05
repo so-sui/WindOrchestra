@@ -44,7 +44,7 @@
         </ul>
     </div>
 
-<main>
+    <main>
         <!-- 動画を追加 -->
     <div class="video-container">
         <video autoplay muted loop playsinline class="background-video">
@@ -87,23 +87,23 @@
         
         
     <p>お問い合わせ先<BR>横浜創学館高等学校吹奏楽部<BR>TEL 000-000-0000</p>
-</main>
-<footer>
-    <p>&copy; 2024 横浜創学館吹奏楽部</p>
-    <div class="social-links">
-        <a href="https://www.instagram.com/so_gakukan_so_sui/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://x.com/so_sui_sui_so" target="_blank" class="social-icon x"><i class="fab fa-x"></i></a>
-    </div>
-    <div class="footer-menu">
-        <a href="menu/privacy.html" class="hover-footer-link">プライバシーポリシー</a>
-        <a href="menu/disclaimer.html" class="hover-footer-link">免責事項</a>
-        <a href="menu/copyright.html" class="hover-footer-link">著作権</a>
-    </div>
-</footer>
-<script src="javascript/script.js"></script>
-<script src="javascript/topics.js"></script>
-<script>
-    const topics = [
+    </main>
+    <footer>
+        <p>&copy; 2024 横浜創学館吹奏楽部</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/so_gakukan_so_sui/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/so_sui_sui_so" target="_blank" class="social-icon x"><i class="fab fa-x"></i></a>
+        </div>
+        <div class="footer-menu">
+            <a href="menu/privacy.html" class="hover-footer-link">プライバシーポリシー</a>
+            <a href="menu/disclaimer.html" class="hover-footer-link">免責事項</a>
+            <a href="menu/copyright.html" class="hover-footer-link">著作権</a>
+        </div>
+    </footer>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/topics.js"></script>
+    <script>
+        const topics = [
     
     
         //=========================================================================================================================================================================
@@ -126,74 +126,74 @@
         { date: '2024年8月12日', content: '現役生によるホームページ製作開始！', published: '2024-08-12' },
         { date: '2024年7月25日', content: '<i class="fab fa-instagram"></i><a href="https://www.instagram.com/p/C92Kvvoz0BS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="hover-link">横浜市大会の結果が出ました！</a>', published: '2024-07-25' },
         { date: '2024年3月19日', content: '第20回定期演奏会開催！', published: '2024-03-19' },
-    ];
+        ];
 
 
 
 
 
 
-const topicsList = document.getElementById('topics1-list');
+        const topicsList = document.getElementById('topics1-list');
 
-topics.slice(0, 10).forEach(topic => {
-    const listItem = document.createElement('li');
-    const publishDate = new Date(topic.published);
-    const now = new Date();
-    const twoWeeks = 14 * 24 * 60 * 60 * 1000;
+        topics.slice(0, 10).forEach(topic => {
+            const listItem = document.createElement('li');
+            const publishDate = new Date(topic.published);
+            const now = new Date();
+            const twoWeeks = 14 * 24 * 60 * 60 * 1000;
 
-    // 公開日から二週間以内なら "new" を表示
-    if (now - publishDate < twoWeeks) {
-        listItem.innerHTML = `(new) ${topic.date}: ${topic.content}`;
-    } else {
-        listItem.innerHTML = `${topic.date}: ${topic.content}`;
-    }
+            // 公開日から二週間以内なら "new" を表示
+            if (now - publishDate < twoWeeks) {
+                listItem.innerHTML = `(new) ${topic.date}: ${topic.content}`;
+            } else {
+                listItem.innerHTML = `${topic.date}: ${topic.content}`;
+            }
 
-    topicsList.appendChild(listItem);
-});
-
-
+            topicsList.appendChild(listItem);
+        });
 
 
 
-let currentSlide = 0;
 
-function updateSlidePosition() {
-  const carouselImages = document.querySelector('.carousel-images');
-  const totalSlides = document.querySelectorAll('.carousel-image').length;
-  const imageWidth = 410; // 画像の幅 + マージン（5px * 2）
-  const maxTranslateX = (totalSlides - 1) * imageWidth;
 
-  // 現在のスライド位置が最大位置を超えないように制限
-  if (currentSlide * imageWidth > maxTranslateX) {
-    currentSlide = totalSlides - 1;
-  }
+        let currentSlide = 0;
 
-  // 現在のスライド位置が0より小さくならないように制限
-  if (currentSlide < -3) {
-    currentSlide = -3;
-  }
+        function updateSlidePosition() {
+        const carouselImages = document.querySelector('.carousel-images');
+        const totalSlides = document.querySelectorAll('.carousel-image').length;
+        const imageWidth = 410; // 画像の幅 + マージン（5px * 2）
+        const maxTranslateX = (totalSlides - 1) * imageWidth;
 
-  const offset = (carouselImages.parentElement.clientWidth / 2) - (imageWidth / 2);
-  carouselImages.style.transform = `translateX(${offset - currentSlide * imageWidth}px)`;
-}
+        // 現在のスライド位置が最大位置を超えないように制限
+        if (currentSlide * imageWidth > maxTranslateX) {
+            currentSlide = totalSlides - 1;
+        }
 
-function nextSlide() {
-  const totalSlides = document.querySelectorAll('.carousel-image').length;
-  if (currentSlide < totalSlides - 4) { // 最後の画像を超えないように制限
-    currentSlide++;
-    updateSlidePosition();
-  }
-}
+        // 現在のスライド位置が0より小さくならないように制限
+        if (currentSlide < -3) {
+            currentSlide = -3;
+        }
 
-function prevSlide() {
-  if (currentSlide > -3) { // 最初の画像より前に行かないように制限
-    currentSlide--;
-    updateSlidePosition();
-  }
-}
+        const offset = (carouselImages.parentElement.clientWidth / 2) - (imageWidth / 2);
+        carouselImages.style.transform = `translateX(${offset - currentSlide * imageWidth}px)`;
+        }
 
-// 初期位置を中央に配置するために呼び出す
-updateSlidePosition();
+        function nextSlide() {
+        const totalSlides = document.querySelectorAll('.carousel-image').length;
+        if (currentSlide < totalSlides - 4) { // 最後の画像を超えないように制限
+            currentSlide++;
+            updateSlidePosition();
+        }
+        }
+
+        function prevSlide() {
+        if (currentSlide > -3) { // 最初の画像より前に行かないように制限
+            currentSlide--;
+            updateSlidePosition();
+        }
+        }
+
+        // 初期位置を中央に配置するために呼び出す
+        updateSlidePosition();
     </script>
 </body>
 </html>

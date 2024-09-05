@@ -7,33 +7,33 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-.activities {
-    margin: 20px;
-}
+        .activities {
+            margin: 20px;
+        }
 
-.year-section h3 button {
-    background: none;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
-    outline: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5em; /* アイコンとの間隔 */
-    color: #007bff; /* ボタンの色 */
-}
+        .year-section h3 button {
+            background: none;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5em; /* アイコンとの間隔 */
+            color: #007bff; /* ボタンの色 */
+        }
 
-.year-section h3 button[aria-expanded="true"] i {
-    transform: rotate(180deg); /* 展開中のアイコンを逆向きに */
-}
+        .year-section h3 button[aria-expanded="true"] i {
+            transform: rotate(180deg); /* 展開中のアイコンを逆向きに */
+        }
 
-.year-section h3 button[aria-expanded="false"] i {
-    transform: rotate(0deg); /* 折りたたみ中のアイコンを正位置に */
-}
+        .year-section h3 button[aria-expanded="false"] i {
+            transform: rotate(0deg); /* 折りたたみ中のアイコンを正位置に */
+        }
 
-.year-content {
-    display: none; /* 初期状態では非表示 */
-}
+        .year-content {
+            display: none; /* 初期状態では非表示 */
+        }
 
     </style>
 </head>
@@ -41,22 +41,22 @@
     <header class="site-header">
     	<button id="hamburger-button" class="hamburger">
        	 <i class="fas fa-bars"></i>
-    </button>
-    <a href="../index.html" class="site-title"><img src="../images/横浜創学館高校.jpg" alt="横浜創学館吹奏楽部"></a>
-    <nav>
-        <ul id="menu" class="main-menu">
-            <li><a href="about.html" class="menu-item">部活動紹介</a></li>
-            <li><a href="events.html" class="menu-item">演奏活動のお知らせ</a></li>
-            <li><a href="recruiting.html" class="menu-item">部員募集</a></li>
-            <li><a href="lecturer.html" class="menu-item">顧問・講師紹介</a></li>
-        </ul>
-    </nav>
-</header>
+        </button>
+        <a href="../index.html" class="site-title"><img src="../images/横浜創学館高校.jpg" alt="横浜創学館吹奏楽部"></a>
+        <nav>
+            <ul id="menu" class="main-menu">
+                <li><a href="about.html" class="menu-item">部活動紹介</a></li>
+                <li><a href="events.html" class="menu-item">演奏活動のお知らせ</a></li>
+                <li><a href="recruiting.html" class="menu-item">部員募集</a></li>
+                <li><a href="lecturer.html" class="menu-item">顧問・講師紹介</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="sidebar">
-    <button id="close-button" class="close-btn">
-        <i class="fas fa-times"></i>
-    </button>
+    <div class="sidebar">
+        <button id="close-button" class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
         <ul>
             <li><a href="../index.html">ホーム</a></li>
             <li><a href="about.html">部活動紹介</a></li>
@@ -73,88 +73,75 @@
         </ul>
     </div>
 
-<main>
-    <!-- イベント紹介セクション -->
-    <section class="events">
-        <h2>主なイベント紹介</h2>
-        <div class="event-grid">
-        <a href="../pages/Brass Band Competition.html" class="event-item" style="background-image: url('../images/IMG_1518.JPG');">
-            <div class="event-text">吹奏楽コンクール</div>
-        </a>
-        <a href="../pages/Joint Concert.html" class="event-item" style="background-image: url('../images/IMG_1514.JPG');">
-            <div class="event-text">ジョイントコンサート</div>
-        </a>
-        <a href="../pages/Summer training camp.html" class="event-item" style="background-image: url('../images/IMG_1500.jpg');">
-            <div class="event-text">夏季合宿</div>
-        </a>
-        <a href="../pages/School festival.html" class="event-item" style="background-image: url('../images/IMG_1517.jpeg');">
-            <div class="event-text">夕照祭</div>
-        </a>
-        <a href="../pages/Ensemble Contest.html" class="event-item" style="background-image: url('../images/IMG_1520.JPG');">
-            <div class="event-text">アンサンブルコンテスト</div>
-        </a>
-        <a href="../pages/Regular Concerts.html" class="event-item" style="background-image: url('../images/IMG_1516.JPG');">
-            <div class="event-text">定期演奏会</div>
-        </a>
-        <a href="../pages/Baseball support.html" class="event-item" style="background-image: url('../images/IMG_1515.JPG');">
-            <div class="event-text">野球応援</div>
-        </a>
-        <a href="../pages/Hall practice.html" class="event-item" style="background-image: url('../images/IMG_1519.JPG');">
-            <div class="event-text">ホール練習</div>
-        </a>
-    </div>
-    </section>
-         <!-- 演奏活動のお知らせセクション -->
-         
-         
-         
-         
-         
-    <section class="activities">
-    <h2>演奏活動のお知らせ</h2>
-    
-    <!-- 2024年 -->
-    <div class="year-section">
-        <h3><button class="toggle-btn">2024年 <i class="fas fa-chevron-up"></i> </button></h3>
-        <div class="year-content">
-            <h4>8月</h4>
-            <ul>
-                <li><a href="../posts/2488県大会.html" class="hover-link"><i class="fas fa-solid fa-file"></i>神奈川県吹奏楽コンクール</a></li>
-                <li><a href="../posts/2481417合宿.html" class="hover-link"><i class="fas fa-solid fa-file"></i>夏季合宿</a></li>
-            </ul>
-            
-            <h4>7月</h4>
-            <ul>
-                <li><a href="https://www.instagram.com/p/C9cP24lTibH/?utm_source=ig_web_copy_link" class="hover-link"><i class="fab fa-instagram"></i>野球応援</a></li>
-                <li><i class="fas fa-solid fa-file"></i>ホール練習</li>
-                <li><a href="https://www.instagram.com/p/C92Kvvoz0BS/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="hover-link"><i class="fab fa-instagram"></i>横浜市吹奏楽コンクール</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <!-- 他の年 -->
-    <div class="year-section">
-        <h3><button class="toggle-btn">2023年 <i class="fas fa-chevron-up"></i> </button></h3>
-        <div class="year-content" style="display: none;">
-            <!-- 2023年の内容 -->
-        </div>
-    </div>
-</section>
-</main>
-
-
-
-
-
-
-
+    <main>
+        <!-- イベント紹介セクション -->
+        <section class="events">
+            <h2>主なイベント紹介</h2>
+            <div class="event-grid">
+                <a href="../pages/Brass Band Competition.html" class="event-item" style="background-image: url('../images/IMG_1518.JPG');">
+                    <div class="event-text">吹奏楽コンクール</div>
+                </a>
+                <a href="../pages/Joint Concert.html" class="event-item" style="background-image: url('../images/IMG_1514.JPG');">
+                    <div class="event-text">ジョイントコンサート</div>
+                </a>
+                <a href="../pages/Summer training camp.html" class="event-item" style="background-image: url('../images/IMG_1500.jpg');">
+                    <div class="event-text">夏季合宿</div>
+                </a>
+                <a href="../pages/School festival.html" class="event-item" style="background-image: url('../images/IMG_1517.jpeg');">
+                    <div class="event-text">夕照祭</div>
+                </a>
+                <a href="../pages/Ensemble Contest.html" class="event-item" style="background-image: url('../images/IMG_1520.JPG');">
+                    <div class="event-text">アンサンブルコンテスト</div>
+                </a>
+                <a href="../pages/Regular Concerts.html" class="event-item" style="background-image: url('../images/IMG_1516.JPG');">
+                    <div class="event-text">定期演奏会</div>
+                </a>
+                <a href="../pages/Baseball support.html" class="event-item" style="background-image: url('../images/IMG_1515.JPG');">
+                    <div class="event-text">野球応援</div>
+                </a>
+                <a href="../pages/Hall practice.html" class="event-item" style="background-image: url('../images/IMG_1519.JPG');">
+                    <div class="event-text">ホール練習</div>
+                </a>
+            </div>
+        </section>
+        <section class="activities">
+            <h2>演奏活動のお知らせ</h2>
+        
+            <!-- 2024年 -->
+            <div class="year-section">
+                <h3><button class="toggle-btn">2024年 <i class="fas fa-chevron-up"></i> </button></h3>
+                <div class="year-content">
+                    <h4>8月</h4>
+                    <ul>
+                        <li><a href="../posts/2488県大会.html" class="hover-link"><i class="fas fa-solid fa-file"></i>神奈川県吹奏楽コンクール</a></li>
+                        <li><a href="../posts/2481417合宿.html" class="hover-link"><i class="fas fa-solid fa-file"></i>夏季合宿</a></li>
+                    </ul>
+                    
+                    <h4>7月</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/p/C9cP24lTibH/?utm_source=ig_web_copy_link" class="hover-link"><i class="fab fa-instagram"></i>野球応援</a></li>
+                        <li><i class="fas fa-solid fa-file"></i>ホール練習</li>
+                        <li><a href="https://www.instagram.com/p/C92Kvvoz0BS/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="hover-link"><i class="fab fa-instagram"></i>横浜市吹奏楽コンクール</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- 他の年 -->
+            <div class="year-section">
+                <h3><button class="toggle-btn">2023年 <i class="fas fa-chevron-up"></i> </button></h3>
+                <div class="year-content" style="display: none;">
+                    <!-- 2023年の内容 -->
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 横浜創学館吹奏楽部</p>
         <div class="social-links">
             <a href="https://www.instagram.com/so_gakukan_so_sui/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://x.com/so_sui_sui_so" target="_blank" class="social-icon x"><i class="fab fa-x"></i></a>
         </div>
-            <div class="footer-menu">
+        <div class="footer-menu">
             <a href="privacy.html" class="hover-footer-link">プライバシーポリシー</a>
             <a href="disclaimer.html" class="hover-footer-link">免責事項</a>
             <a href="copyright.html" class="hover-footer-link">著作権</a>
@@ -162,27 +149,27 @@
     </footer>
     <script src="../javascript/script.js"></script>
     <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const toggleButtons = document.querySelectorAll(".toggle-btn");
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButtons = document.querySelectorAll(".toggle-btn");
 
-    toggleButtons.forEach(button => {
-        button.addEventListener("click", function() {
-            const expanded = this.getAttribute("aria-expanded") === "true";
-            this.setAttribute("aria-expanded", !expanded);
-            const content = this.closest(".year-section").querySelector(".year-content");
+            toggleButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    const expanded = this.getAttribute("aria-expanded") === "true";
+                    this.setAttribute("aria-expanded", !expanded);
+                    const content = this.closest(".year-section").querySelector(".year-content");
 
-            // アイコンの向きを変更
-            const icon = this.querySelector("i");
-            if (!expanded) {
-                content.style.display = "block";
-                icon.classList.replace("fa-chevron-down", "fa-chevron-up");
-            } else {
-                content.style.display = "none";
-                icon.classList.replace("fa-chevron-up", "fa-chevron-down");
-            }
+                    // アイコンの向きを変更
+                    const icon = this.querySelector("i");
+                    if (!expanded) {
+                        content.style.display = "block";
+                        icon.classList.replace("fa-chevron-down", "fa-chevron-up");
+                    } else {
+                        content.style.display = "none";
+                        icon.classList.replace("fa-chevron-up", "fa-chevron-down");
+                    }
+                });
+            });
         });
-    });
-});
     </script>
 </body>
 </html>
