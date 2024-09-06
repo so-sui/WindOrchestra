@@ -1,6 +1,7 @@
 // トピックスデータ
 const topicsArchive = {
     2024: [
+        { date: '2024年9月05日', content: '<i class="fas fa-solid fa-file"></i><a href="https://forms.office.com/r/jH5Cn6vZ5V" class="hover-link">【重要】夕照祭の予約受付開始しました</a>', published: '2024-09-05' },
         { date: '2024年9月04日', content: '<i class="fab fa-instagram"></i><a href="https://www.instagram.com/p/C_fxwfcTFfv/?utm_source=ig_web_copy_link" class="hover-link">スタジオ録音してきました！</a>', published: '2024-09-04' },
         { date: '2024年8月20日', content: 'ホームページの基本レイアウト完成？', published: '2024-08-20' },
         { date: '2024年8月17日', content: '<a href="../posts/2481417合宿.html" class="hover-link">夏季合宿を行いました。</a>', published: '2024-08-17' },
@@ -23,18 +24,11 @@ const topicsArchive = {
 let currentYear = 2024;  // 初期表示する年度(今の年に変えてね！)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+//=========================================================================================================================================
+//
+//  これより下のデータはいじらないでください！！
+//
+//=========================================================================================================================================
 
 
 function updateTopicsList(year) {
