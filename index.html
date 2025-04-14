@@ -108,7 +108,7 @@
     
     
         //=========================================================================================================================================================================
-        //「基本的に更新するページはここです！！」
+        //「基本的に更新するページはここ」
         //Instagramのひな形→{ date: '0000年0月00日', content: '<i class="fab fa-instagram"></i><a href="ここにリンク" class="hover-link">ここに内容</a>', published: '0000-00-00' },
         //X(旧Twitter)のひな形→{ date: '0000年0月00日', content: '<i class="fas fa-x"></i><a href="ここにリンク" class="hover-link">ここに内容</a>', published: '0000-00-00' },
         //サイト別ページのひな形→{ date: '0000年0月00日', content: '<i class="fas fa-solid fa-file"></i><a href="ここにリンク" class="hover-link">ここに内容</a>', published: '0000-00-00' },
@@ -119,7 +119,7 @@
         
         
         
-        
+        { date: '2025年4月14日', content: '<a href="https://x.com/so_sui_sui_so/status/1911387120721109213" class="hover-link">新歓コンサート本日開催のお知らせ</a>', published: '2025-04-14' },
         { date: '2024年9月27日', content: '<i class="fab fa-instagram"></i><a href="https://www.instagram.com/p/C6dgTtDBRr7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="hover-link">小学校の依頼演奏に行ってきました。</a>', published: '2024-09-27' },
         { date: '2024年9月05日', content: '<i class="fas fa-solid fa-file"></i><a href="https://forms.office.com/r/jH5Cn6vZ5V" class="hover-link">【重要】夕照祭の予約受付開始しました</a>', published: '2024-09-05' },
         { date: '2024年9月04日', content: '<i class="fab fa-instagram"></i><a href="https://www.instagram.com/p/C_fxwfcTFfv/?utm_source=ig_web_copy_link" class="hover-link">スタジオ録音してきました！</a>', published: '2024-09-04' },
@@ -127,7 +127,6 @@
         { date: '2024年8月17日', content: '<i class="fas fa-solid fa-file"></i><a href="posts/2481417合宿.html" class="hover-link">夏季合宿を行いました。</a>', published: '2024-08-17' },
         { date: '2024年8月12日', content: '現役生によるホームページ製作開始！', published: '2024-08-12' },
         { date: '2024年7月25日', content: '<i class="fab fa-instagram"></i><a href="https://www.instagram.com/p/C92Kvvoz0BS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="hover-link">横浜市大会の結果が出ました！</a>', published: '2024-07-25' },
-        { date: '2024年3月19日', content: '第20回定期演奏会開催！', published: '2024-03-19' },
         ];
 
 
@@ -143,7 +142,6 @@
             const now = new Date();
             const twoWeeks = 14 * 24 * 60 * 60 * 1000;
 
-            // 公開日から二週間以内なら "new" を表示
             if (now - publishDate < twoWeeks) {
                 listItem.innerHTML = `(new) ${topic.date}: ${topic.content}`;
             } else {
@@ -162,15 +160,13 @@
         function updateSlidePosition() {
         const carouselImages = document.querySelector('.carousel-images');
         const totalSlides = document.querySelectorAll('.carousel-image').length;
-        const imageWidth = 410; // 画像の幅 + マージン（5px * 2）
+        const imageWidth = 410; 
         const maxTranslateX = (totalSlides - 1) * imageWidth;
 
-        // 現在のスライド位置が最大位置を超えないように制限
         if (currentSlide * imageWidth > maxTranslateX) {
             currentSlide = totalSlides - 1;
         }
 
-        // 現在のスライド位置が0より小さくならないように制限
         if (currentSlide < -3) {
             currentSlide = -3;
         }
@@ -181,20 +177,19 @@
 
         function nextSlide() {
         const totalSlides = document.querySelectorAll('.carousel-image').length;
-        if (currentSlide < totalSlides - 4) { // 最後の画像を超えないように制限
+        if (currentSlide < totalSlides - 4) { 
             currentSlide++;
             updateSlidePosition();
         }
         }
 
         function prevSlide() {
-        if (currentSlide > -3) { // 最初の画像より前に行かないように制限
+        if (currentSlide > -3) { 
             currentSlide--;
             updateSlidePosition();
         }
         }
 
-        // 初期位置を中央に配置するために呼び出す
         updateSlidePosition();
     </script>
 </body>
