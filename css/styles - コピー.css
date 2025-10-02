@@ -215,7 +215,7 @@ footer {
 
 
 
-/*活動紹介用バナー
+/*活動紹介用バナー*/
 .events {
     padding: 20px;
     background-color: #f9f9f9; /* セクションの背景色 */
@@ -800,7 +800,8 @@ section p {
 
 
 /* スマホ用のスタイル */
-@media (max-width: 768px) {
+@media (max-width: 768px) 
+{
     .toggle-button {
         width: 100%;
         font-size: 1.2em;
@@ -860,19 +861,11 @@ section p {
     grid-template-columns: repeat(1, 1fr); /* 横に4つの列 */
     gap: 10px; /* アイテム間の間隔 */
     padding: 20px;
+    }
 
     .overlay-text {
     font-size: 1rem;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
 }
